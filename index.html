@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Library</title>
+  <title>Flashcard AI</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,15 +17,30 @@
     </div>
   </nav>
 
-  <main class="library-page">
+  <main class="home-page">
 
-    <h1>Your Decks</h1>
+    <div class="hero-card">
 
-    <div id="deckContainer" class="deck-grid"></div>
+      <h1>Create Smart Flashcards</h1>
+
+      <p>
+        Paste your notes below and instantly generate interactive flashcards.
+      </p>
+
+      <textarea id="inputText" placeholder="Paste your flashcard text here...
+
+Front: What is AI?
+Back: Artificial Intelligence"></textarea>
+
+      <input type="text" id="deckTitle" placeholder="Deck title">
+
+      <button id="generateBtn">Generate Flashcards</button>
+
+    </div>
 
   </main>
 
-  <script src="library.js"></script>
+  <script src="app.js"></script>
 
 </body>
 </html>
