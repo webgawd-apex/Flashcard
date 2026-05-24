@@ -1,0 +1,67 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flashcard Generator</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>Flashcard Generator</h1>
+
+    <textarea id="inputText" placeholder="Paste your flashcard text here...
+
+Example:
+
+Front: What is AI?
+Back: Artificial Intelligence
+
+Front: Capital of Nigeria?
+Back: Abuja
+"></textarea>
+
+    <button id="generateBtn">Generate Flashcards</button>
+
+    <div id="flashcardSection" class="hidden">
+
+      <div class="counter">
+        <span id="cardCounter">1 / 1</span>
+      </div>
+
+      <div class="flashcard-container">
+
+        <button class="nav-btn" id="prevBtn">&#8592;</button>
+
+        <div class="flashcard" id="flashcard">
+
+          <div class="flashcard-inner">
+
+            <div class="flashcard-front">
+              Front
+            </div>
+
+            <div class="flashcard-back">
+              Back
+            </div>
+
+          </div>
+
+        </div>
+
+        <button class="nav-btn" id="nextBtn">&#8594;</button>
+
+      </div>
+
+      <p class="tap-text">Tap card to flip</p>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
