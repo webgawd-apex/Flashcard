@@ -1,0 +1,166 @@
+/* style.css */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:Arial, sans-serif;
+  background:#0f172a;
+  color:white;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:20px;
+}
+
+.container{
+  width:100%;
+  max-width:700px;
+  text-align:center;
+}
+
+h1{
+  margin-bottom:20px;
+  font-size:2rem;
+}
+
+textarea{
+  width:100%;
+  height:250px;
+  border:none;
+  outline:none;
+  border-radius:15px;
+  padding:20px;
+  font-size:16px;
+  resize:none;
+  background:#1e293b;
+  color:white;
+  margin-bottom:20px;
+}
+
+button{
+  cursor:pointer;
+}
+
+#generateBtn{
+  background:#2563eb;
+  color:white;
+  border:none;
+  padding:15px 30px;
+  border-radius:12px;
+  font-size:16px;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+#generateBtn:hover{
+  background:#1d4ed8;
+}
+
+.hidden{
+  display:none;
+}
+
+.counter{
+  margin-top:30px;
+  margin-bottom:15px;
+  font-size:18px;
+}
+
+.flashcard-container{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:15px;
+}
+
+.flashcard{
+  width:320px;
+  height:220px;
+  perspective:1000px;
+}
+
+.flashcard-inner{
+  width:100%;
+  height:100%;
+  position:relative;
+  transition:transform 0.6s;
+  transform-style:preserve-3d;
+}
+
+.flashcard.flipped .flashcard-inner{
+  transform:rotateY(180deg);
+}
+
+.flashcard-front,
+.flashcard-back{
+  position:absolute;
+  width:100%;
+  height:100%;
+  backface-visibility:hidden;
+  border-radius:20px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+  font-size:20px;
+  text-align:center;
+  box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+.flashcard-front{
+  background:#1e293b;
+}
+
+.flashcard-back{
+  background:#2563eb;
+  transform:rotateY(180deg);
+}
+
+.nav-btn{
+  width:55px;
+  height:55px;
+  border-radius:50%;
+  border:none;
+  font-size:24px;
+  background:#1e293b;
+  color:white;
+  transition:0.3s;
+}
+
+.nav-btn:hover{
+  background:#334155;
+}
+
+.tap-text{
+  margin-top:15px;
+  opacity:0.7;
+  font-size:14px;
+}
+
+@media(max-width:600px){
+
+  .flashcard-container{
+    gap:8px;
+  }
+
+  .flashcard{
+    width:250px;
+    height:180px;
+  }
+
+  .flashcard-front,
+  .flashcard-back{
+    font-size:17px;
+  }
+
+  .nav-btn{
+    width:45px;
+    height:45px;
+  }
+
+}
