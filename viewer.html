@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Deck</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">Flashcard AI</div>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="library.html">Library</a>
+    </div>
+  </nav>
+
+  <main class="viewer-page">
+
+    <div class="deck-header">
+      <h1 id="deckName">Deck</h1>
+      <p id="cardCounter">1 / 1</p>
+    </div>
+
+    <div class="flashcard-wrapper">
+
+      <button class="nav-btn" id="prevBtn">&#8592;</button>
+
+      <div class="flashcard" id="flashcard">
+
+        <div class="flashcard-inner">
+
+          <div class="flashcard-front"></div>
+
+          <div class="flashcard-back"></div>
+
+        </div>
+
+      </div>
+
+      <button class="nav-btn" id="nextBtn">&#8594;</button>
+
+    </div>
+
+    <p class="tap-text">Tap card to flip</p>
+
+    <button id="shareBtn" class="share-btn">
+      Share Deck
+    </button>
+
+  </main>
+
+  <script src="viewer.js"></script>
+
+</body>
+</html>
